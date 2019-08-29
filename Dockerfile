@@ -43,4 +43,4 @@ RUN apk add --no-cache libaio libgcc
 COPY --from=builder /usr/local/share/sysbench /usr/local/share/sysbench
 COPY --from=builder /usr/local/bin/sysbench   /usr/local/bin/sysbench
 
-CMD ["/usr/local/bin/sysbench"]
+ENTRYPOINT ["/usr/local/bin/sysbench"]
